@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pass.css">
+</head>
+<body>
+    
+        
+         <form  id="myForm" >
+
+           <h1><span> FORM </span></h1>
+
+           <div class="cointainer">
+
+            <div class="form-group">
+                <span>FIRST NAME:</span>
+            <input type="text" placeholder="Firstname" required>
+            </div>
+
+            <div class="form-group">
+              <span>SECOND NAME:</span>
+            <input type="text" placeholder="Surname" required>
+            </div>
+
+             <div class="form-group">
+                <span>EMAIL ADDRESS:</span>
+            <input type="email" placeholder="Email" required>
+             </div>
+
+             <div class="form-group">
+                <span>DATE OF BIRTH:</span>
+            <input type="date" placeholder="Date" required>
+             </div>
+
+             <div class="form-group">
+                <span>GENDER:
+            <select required>
+                <option value="">Select Gender </option>
+                <option value="MALE">MALE></option>
+                <option  value="female">FEMALE</option>
+                <option value="robot">ROBORT</option>
+            </select>
+             </div>
+
+            <div class="form-group">
+            <span>PASSWORD:</span>
+
+            <div class="passord-box">
+                <input type="password" 
+              id="password"  placeholder="password" required >
+
+            <img src="eyes.png" id="eye" class="eye" onclick="togglePassword()">
+            </div>
+            </div>
+
+             <div class="form-group generate" >
+                <button type="button" onclick="createPassword()">Generate</button>
+             </div>
+
+             <div class="form-group">
+                <button type="submit"> Submit</button>
+             </div>
+
+            </form>
+        
+    </div>
+    <script src="pass.js" ></script>
+
+    </body>

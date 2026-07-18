@@ -1,0 +1,41 @@
+.container{
+    background-color: teal;
+}
+.form-group{
+    
+    display: grid;
+    
+}
+form{
+    display: grid;
+    gap: 1.5rem;
+    
+        grid-template-columns:
+        1fr 1fr
+}
+.form-group:has(.generate){
+    grid-column: 1/-1;
+}
+
+.eye{
+    height: 10px;
+    width: fit-content;
+    position: relative;
+}
+.eye img{
+    width: 200px;
+    padding-right: 35px;
+}
+input{
+    background-color: lightgray;
+    width: 100%;
+    background: var(--surface-2);
+}
+.form button{
+    background-color: lightgray;
+    padding: 20px;
+}
+select{
+    background-color: lightgray;
+    
+}
